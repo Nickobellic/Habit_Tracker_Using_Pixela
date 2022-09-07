@@ -41,9 +41,9 @@ pixel_param = {
     'quantity': '1'
 }
 
-post_pixel = requests.post(url=f"{pixela}/gtaonline", headers=header, json=pixel_param)
-# update_attendance = requests.put(url=f"{pixela}/gtaonline", headers=header,json=put_attendance_param)     #TESTING OF 'PUT' REQUEST
-# requests.delete(url=f"{pixela}/bicycle/{today.strftime('%Y%m%d')}", headers=header)   TESTING 'DELETE' REQUEST
+post_pixel = requests.post(url=f"<pixela_api_endpoint>", headers=header, json=pixel_param)
+# update_attendance = requests.put(url=f"<pixela_api_endpoint>", headers=header,json=put_attendance_param)     #TESTING OF 'PUT' REQUEST
+# requests.delete(url=f"<pixela_api_endpoint>{today.strftime('%Y%m%d')}", headers=header)   TESTING 'DELETE' REQUEST
 
 
 post_pixel_cycling = requests.post(url=f"{pixela}/bicycle", headers=header, json=cycle_pixel_param)
